@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Saber.Vendors.Market</RootNamespace>
+    <AssemblyName>Saber.Vendors.Market</AssemblyName>
+    <Authors>Mark Entingh</Authors>
+    <Company>Datasilk</Company>
+    <Description>A vendor plugin for Saber (https://saber.datasilk.io/saber) that allows webmasters to browse an online market of website templates that they can download &amp; use as a starting point.</Description>
+    <Copyright>2021 Datasilk</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://www.github.com/Datasilk/Saber-Market</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Saber.Core" Version="1.0.7.1" />
+  </ItemGroup>
+</Project>
