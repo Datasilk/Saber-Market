@@ -1,0 +1,39 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64">
+<defs>
+<g id="iconMarket_0_Layer1_0_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 50.75 5.9
+L 50 2 48 3 48.5 5.55
+Q 40.8556640625 8.098046875 32.95 6.25
+L 33 4 31 4 31 6.25
+Q 23.1060546875 8.07734375 15.5 5.55
+L 16 3 14 2 13.2 5.9 0 21
+Q 1.461328125 23.7767578125 5 23
+L 6 42 2 43 4 63 60 63 62 43 58 42 59 23
+Q 62.55 23.8 64 21
+L 50.75 5.9
+M 55.75 23.8
+L 56 24 55.05 41 49 39 15 39 8.95 41 8 24 8.2 23.75
+Q 11.1337890625 25.7005859375 15.55 23.85 19.44453125 27.1828125 23.65 24.7 27.7166015625 28.11953125 32 25 36.3 28.1 40.35 24.7 44.55 27.2 48.4 23.9 52.85 25.7 55.75 23.8
+M 49 41
+L 55 43 9 43 15 41 49 41 Z"/>
+</g>
+
+<g id="iconMarket_0_Layer0_0_FILL">
+<path fill="#FFFFFF" fill-opacity="0" stroke="none" d="
+M 64 0
+L 0 0 0 64 64 64 64 0 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#iconMarket_0_Layer1_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#iconMarket_0_Layer0_0_FILL"/>
+</g>
+</g>
+</svg>
