@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Saber.Vendor;
-
-namespace Saber.Vendors.Market
+﻿namespace Saber.Vendors.Market
 {
-    public class Market : Service, IVendorService
+    public class Market : Service
     {
-        public string Filter(int categoryId, int start = 1, int length = 50, string search = "")
+        public string Toolbar()
         {
-            return "";
+            if (!CheckSecurity()) { return AccessDenied(); }
+            return Cache.LoadFile("Vendors/Market/toolbar.html");
         }
     }
 }
