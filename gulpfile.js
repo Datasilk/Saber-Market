@@ -10,7 +10,7 @@ var publish = 'bin/Publish/';
 function publishToPlatform(platform) {
     return gulp.src([
         //include custom resources
-        //'websitesettings.html', 'websitesettings.js'
+        'toolbar.html', 'editor.js', 'icons.svg',
         //include all files from published folder
         release + platform + '/publish/*',
         //exclude unwanted dependencies
