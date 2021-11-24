@@ -23,11 +23,23 @@
 
         var toolbarHtml = '';
 
+        //set up postMessage listener
+        window.addEventListener("message", (e) => {
+            console.log(e);
+            if (host.indexOf(e.origin) == 0 && e.data && e.data.indexOf('marketplace|') == 0) {
+                var data = JSON.parse(e.data.replace('marketplace|', ''));
+                window.market.load(data.userId, data.username);
+                var iframe = $('.tab.market.market-section iframe')[0].contentWindow.targetObject;
+                console.log(iframe);
+                iframe.window.postMessage('marketplace', '*');
+            }
+        }, false);
+
         function focusTab() {
             //select tab & generate toolbar
             $('.tab.market-section').removeClass('hide');
             if (toolbarHtml == '') {
-                S.ajax.post('Market/Toolbar', {}, (response) => {
+                S.ajax.post('Marketplace/Toolbar', {}, (response) => {
                     toolbarHtml = response;
                     renderTab();
                 });
@@ -91,4 +103,4 @@
 });
 
 //add icons to the editor
-S.svg.load('/editor/vendors/market/icons.svg');
+S.svg.load('/editor/vendors/marketplace/icons.svg');

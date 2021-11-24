@@ -1,6 +1,6 @@
 ﻿using Saber.Vendor;
 
-namespace Saber.Vendors.Market
+namespace Saber.Vendors.Marketplace
 {
     public class Info : IVendorInfo
     {
