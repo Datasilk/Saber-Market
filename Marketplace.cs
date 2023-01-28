@@ -5,7 +5,7 @@
         public string Toolbar()
         {
             if (!CheckSecurity()) { return AccessDenied(); }
-            return Cache.LoadFile("Vendors/Marketplace/toolbar.html");
+            return Cache.LoadFile("Vendors/Market/toolbar.html");
         }
     }
 }
