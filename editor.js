@@ -1,6 +1,6 @@
 ﻿S.editor.dropmenu.add('.menu-bar .menu-item-website > .drop-menu > .menu', 'market', 'Marketplace', '#icon-market', true, () => {
     //show market tab
-    var host = 'http://www.saber.io:7071/';
+    var host = S.editor.env == 'prod' ? 'https://screenshots.sabercms.com' : 'http://localhost:7071/';
     $('.editor .sections > .tab').addClass('hide');
 
     if ($('.tab.market-section').length == 0) {
@@ -25,13 +25,10 @@
 
         //set up postMessage listener
         window.addEventListener("message", (e) => {
-            console.log(e);
-            console.log(e.origin);
             if (host.indexOf(e.origin) == 0 && e.data && e.data.indexOf('marketplace|') == 0) {
                 var data = JSON.parse(e.data.replace('marketplace|', ''));
                 window.market.load(data.userId, data.username);
                 var iframe = $('.tab.market.market-section iframe')[0].contentWindow;
-                console.log(iframe);
                 iframe.postMessage('saber', '*');
             }
         }, false);
